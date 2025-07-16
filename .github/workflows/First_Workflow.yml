@@ -5,7 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello steps
-        run: echo "Hello, this is my first job in a GitHub Actions workflow!"
+        run: |
+             echo "Hello, this is my first job in a GitHub Actions workflow!"
+             echo "This job runs on an Ubuntu runner."
+             echo "Let's perform some tasks."
       - name: Display current date
         run: date 
       - name: goodbye steps
